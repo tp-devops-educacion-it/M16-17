@@ -16,9 +16,6 @@ WORKDIR /app/TPScanner
 # Expone el puerto 80 para que puedas acceder a la aplicación
 EXPOSE 80
 
-#hadolint
-RUN hadolint Dockerfile
-
 # Ejecuta el script principal cuando se inicia el contenedor
 CMD ["python3", "main.py"]
 
