@@ -18,3 +18,5 @@ EXPOSE 80
 
 # Ejecuta el script principal cuando se inicia el contenedor
 CMD ["python3", "main.py"]
+
+#testCI
