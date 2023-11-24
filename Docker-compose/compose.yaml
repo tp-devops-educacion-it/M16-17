@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  tpscanner:
+    image: vale111/m16-17:v1
+    container_name: tpscanner-compose
+    ports:
+      - "5601:5601/tcp"
+   
+    
+
+  
