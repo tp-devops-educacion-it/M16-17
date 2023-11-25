@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tpscanner-deployment
+  labels:
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: tpscanner
+    spec:
+      containers:
+      - name: tpscanner
+        image: vale111/m16-17:v2
+        ports:
+        - containerPort: 5002
