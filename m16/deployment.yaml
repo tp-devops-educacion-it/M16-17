@@ -3,8 +3,12 @@ kind: Deployment
 metadata:
   name: tpscanner-deployment
   labels:
+    app: tpscanner
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: tpscanner
   template:
     metadata:
       labels:
