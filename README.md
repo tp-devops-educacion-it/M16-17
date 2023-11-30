@@ -20,27 +20,26 @@ Asegúrate de tener instalado lo siguiente antes de empezar:
 ## 🛠 Configuración
 1. **Clona el Repositorio**:
 
-´´´
+``
 Copy code
 git clone https://github.com/tp-devops-educacion-it/m16-17.git
-´´´
+``
 
 2. **Despliega con Helm**:
-
-´´´
+``
 Copy code
 cd tu-repositorio
 helm install m16-17 ./chart
-´´´
+``
 
 3. **Configura ArgoCD**:
 
 Accede al dashboard de ArgoCD y configura la aplicación para una implementación continua.
 
 ## Estructura del Proyecto
-<sup> /chart </sup>: Contiene los archivos Helm para desplegar la aplicación.
-/k8s: Configuraciones Kubernetes para los recursos de la aplicación.
-/docker: Archivos Docker para construir la imagen de la aplicación.
+- /chart: Contiene los archivos Helm para desplegar la aplicación.
+- /k8s: Configuraciones Kubernetes para los recursos de la aplicación.
+- /docker: Archivos Docker para construir la imagen de la aplicación.
 
 ## Contribución
 ¡Contribuciones son bienvenidas! Si encuentras algún problema o tienes una mejora, ¡abre un issue o envía un pull request!
