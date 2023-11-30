@@ -21,14 +21,12 @@ Asegúrate de tener instalado lo siguiente antes de empezar:
 1. **Clona el Repositorio**:
 
 ``
-Copy code
 git clone https://github.com/tp-devops-educacion-it/m16-17.git
 ``
 
 2. **Despliega con Helm**:
+   
 ``
-Copy code
-cd tu-repositorio
 helm install m16-17 ./chart
 ``
 
