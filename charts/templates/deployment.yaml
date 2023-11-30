@@ -1,17 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.name }}
+  name: {{ .Values.metadata.name }}
   labels:
+    app: tpscanner-deployment
 spec:
-  replicas: {{ .Values.spec.replicas }}
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tpscanner
   template:
     metadata:
       labels:
-        app: {{ .Values.spec.template.metadata.labels.app }}
+        app: tpscanner
     spec:
       containers:
-      - name: {{ .Values.spec.template.spec.containers.name }}
-        image: {{ .Values.spec.template.spec.containers.image }}
-        ports: {{ .Values.spec.template.spec.containers.ports }}
-        - containerPort: {{ .Values.spec.template.spec.containers.port.containerPort }}
+      - name: tpscanner
+        image: vale111/m16-17:v2
+        ports:
+        - containerPort: 5002

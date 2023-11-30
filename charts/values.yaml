@@ -1,23 +1,28 @@
 # Default values for m16.
 # This is a YAML-formatted file.
+# Declare variables to be passed into your templates
+
+# Default values for m16.
+# This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 #inicio de values personalizados
 metadata:
-  name: tpscanner-deployment
+  name: tpscanner-deployment-2
 
-spec:
-  replicas: 1  
-  template:
-    metadata:
-      labels:
-        app: tpscanner 
-    spec:
-      containers:
-        name: tpscanner 
-        image: vale111/m16-17:v2
-        ports:
-        - containerPort: 5002
+#spec:
+#  replicas: 1
+#  template:
+#    metadata:
+#      labels:
+#        app: tpscanner-deployment-2
+
+#containers:
+#  name: tpscanner
+#  image: vale111/m16-17:v2
+
+#ports:
+#  containerPort: 5002
 
 
 #fin de values personalizados
